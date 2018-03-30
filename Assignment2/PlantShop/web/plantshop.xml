@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<inventory>
+    <product type='PP'>
+        <code>1001</code>
+        <description>Rosemary Seedling</description>
+        <category>herb</category>
+        <price>6.00</price>
+        <quantity>100</quantity>
+        <reorder-level>50</reorder-level>
+        <reorder-quantity>50</reorder-quantity>
+        <suppliers>
+            <supplier>Aranguez plants</supplier> 
+            <supplier>West Indian Plant</supplier>             
+        </suppliers>
+        <discount></discount>
+        <images>
+            <image>rosemary_seedling.jpg</image>
+            <image>rosemary_seedling2.jpg</image>
+        </images>
+    </product>
+    <product type='PP'>
+        <code>1002</code>
+        <description>Basil Seedling</description>
+        <category>herb</category>
+        <price>6.00</price>
+        <quantity>100</quantity>
+        <reorder-level>50</reorder-level>
+        <reorder-quantity>50</reorder-quantity>
+        <suppliers>
+            <supplier>Aranguez plants</supplier> 
+            <supplier>West Indian Plant</supplier>             
+        </suppliers>
+        <discount></discount>
+        <images>
+            <image>basil_seedling.jpg</image>
+            <image>basil_seedling2.jpg</image>
+        </images>
+    </product>
+    <product type='PP'>
+        <code>1003</code>
+        <description>Tarragon Seedling</description>
+        <category>herb</category>
+        <price>6.00</price>
+        <quantity>100</quantity>
+        <reorder-level>50</reorder-level>
+        <reorder-quantity>50</reorder-quantity>
+        <suppliers>
+            <supplier>Aranguez plants</supplier> 
+            <supplier>West Indian Plant</supplier>             
+        </suppliers>
+        <discount type="monthly">10</discount>
+        <images>
+            <image>tarragon_seedling.jpg</image>
+            <image>tarragon_seedling2.jpg</image>
+        </images>
+    </product>
+    <product type='PP'>
+        <code>1004</code>
+        <description>Oregano Seedling</description>
+        <category>herb</category>
+        <price>6.00</price>
+        <quantity>100</quantity>
+        <reorder-level>50</reorder-level>
+        <reorder-quantity>50</reorder-quantity>
+        <suppliers>
+            <supplier>Aranguez plants</supplier> 
+            <supplier>West Indian Plant</supplier>             
+        </suppliers>
+        <discount type="monthly">10</discount>
+        <images>
+            <image>oregano_seedling.jpg</image>
+            <image>oregano_seedling2.jpg</image>
+        </images>
+    </product>
+    <product type='PP'>
+        <code>1005</code>
+        <description>Mint Seedling</description>
+        <category>herb</category>
+        <price>6.00</price>
+        <quantity>100</quantity>
+        <reorder-level>50</reorder-level>
+        <reorder-quantity>50</reorder-quantity>
+        <suppliers>
+            <supplier>Aranguez plants</supplier> 
+            <supplier>West Indian Plant</supplier>             
+        </suppliers>
+        <discount></discount>
+        <images>
+            <image>mint_seedling.jpg</image>
+            <image>mint_seedling2.jpg</image>
+        </images>
+    </product>
+    <product type='PP'>
+        <code>1006</code>
+        <description>Hibiscus</description>
+        <category>flowering</category>
+        <price>25.00</price>
+        <quantity>50</quantity>
+        <reorder-level>20</reorder-level>
+        <reorder-quantity>30</reorder-quantity>
+        <suppliers>
+            <supplier>Aranguez flowers</supplier> 
+            <supplier>West Indian Plant</supplier>             
+        </suppliers>
+        <discount type="seasonal">10</discount>
+        <images>
+            <image>hibiscus.jpg</image>
+            <image>hibiscus2.jpg</image>
+        </images>
+    </product>
+    <product type='PP'>
+        <code>1007</code>
+        <description>Hydangea</description>
+        <category>flowering</category>
+        <price>25.00</price>
+        <quantity>50</quantity>
+        <reorder-level>20</reorder-level>
+        <reorder-quantity>30</reorder-quantity>
+        <suppliers>
+            <supplier>Aranguez flowers</supplier> 
+            <supplier>West Indian Plant</supplier>             
+        </suppliers>
+        <discount type="seasonal">10</discount>
+        <images>
+            <image>hydrangea.jpg</image>
+            <image>hydrangea2.jpg</image>
+        </images>
+    </product>
+    <product type='PP'>
+        <code>1008</code>
+        <description>Rose</description>
+        <category>flowering</category>
+        <price>25.00</price>
+        <quantity>50</quantity>
+        <reorder-level>20</reorder-level>
+        <reorder-quantity>30</reorder-quantity>
+        <suppliers>
+            <supplier>Aranguez flowers</supplier> 
+            <supplier>West Indian Plant</supplier>             
+        </suppliers>
+        <discount></discount>
+        <images>
+            <image>rose.jpg</image>
+            <image>rose2.jpg</image>
+        </images>
+    </product>
+    <product type='PP'>
+        <code>1009</code>
+        <description>Lily</description>
+        <category>flowering</category>
+        <price>25.00</price>
+        <quantity>50</quantity>
+        <reorder-level>20</reorder-level>
+        <reorder-quantity>30</reorder-quantity>
+        <suppliers>
+            <supplier>Aranguez flowers</supplier> 
+            <supplier>West Indian Plant</supplier>             
+        </suppliers>
+        <discount></discount>
+        <images>
+            <image>lily.jpg</image>
+            <image>lily2.jpg</image>
+        </images>
+    </product>
+    <product type='PP'>
+        <code>1010</code>
+        <description>Daisy</description>
+        <category>flowering</category>
+        <price>25.00</price>
+        <quantity>50</quantity>
+        <reorder-level>20</reorder-level>
+        <reorder-quantity>30</reorder-quantity>
+        <suppliers>
+            <supplier>Aranguez flowers</supplier> 
+            <supplier>West Indian Plant</supplier>             
+        </suppliers>
+        <discount type="seasonal">10</discount>
+        <images>
+            <image>daisy.jpg</image>
+            <image>daisy2.jpg</image>
+        </images>
+    </product>
+    <product type='PP'>
+        <code>1011</code>
+        <description>Grafted Orange</description>
+        <category>fruit</category>
+        <price>56.00</price>
+        <quantity>50</quantity>
+        <reorder-level>60</reorder-level>
+        <reorder-quantity>20</reorder-quantity>
+        <suppliers>
+            <supplier>Aranguez fruit trees</supplier> 
+            <supplier>West Indian Plant</supplier>             
+        </suppliers>
+        <discount type="seasonal">10</discount>
+        <images>
+            <image>orange.jpg</image>
+            <image>orange2.jpg</image>
+        </images>
+    </product>
+    <product type='PP'>
+        <code>1012</code>
+        <description>Cherry Tomato</description>
+        <category>fruit</category>
+        <price>12.00</price>
+        <quantity>50</quantity>
+        <reorder-level>20</reorder-level>
+        <reorder-quantity>20</reorder-quantity>
+        <suppliers>
+            <supplier>Aranguez fruit trees</supplier> 
+            <supplier>West Indian Plant</supplier>             
+        </suppliers>
+        <discount type="seasonal">10</discount>
+        <images>
+            <image>tomato.jpg</image>
+            <image>tomato2.jpg</image>
+        </images>
+    </product>
+    <product type='PP'>
+        <code>1013</code>
+        <description>Bird Pepper</description>
+        <category>fruit</category>
+        <price>10.00</price>
+        <quantity>20</quantity>
+        <reorder-level>10</reorder-level>
+        <reorder-quantity>10</reorder-quantity>
+        <suppliers>
+            <supplier>Aranguez fruit trees</supplier> 
+            <supplier>West Indian Plant</supplier>             
+        </suppliers>
+        <discount type="seasonal">10</discount>
+        <images>
+            <image>pepper.jpg</image>
+            <image>pepper2.jpg</image>
+        </images>
+    </product>
+    <product type='PP'>
+        <code>1014</code>
+        <description>Grafted Lemon</description>
+        <category>fruit</category>
+        <price>23.00</price>
+        <quantity>50</quantity>
+        <reorder-level>30</reorder-level>
+        <reorder-quantity>20</reorder-quantity>
+        <suppliers>
+            <supplier>Aranguez fruit trees</supplier> 
+            <supplier>West Indian Plant</supplier>             
+        </suppliers>
+        <discount type="seasonal">10</discount>
+        <images>
+            <image>lemon.jpg</image>
+            <image>lemon2.jpg</image>
+        </images>
+    </product>
+    <product type='PP'>
+        <code>1015</code>
+        <description>Cucumber</description>
+        <category>fruit</category>
+        <price>5.00</price>
+        <quantity>25</quantity>
+        <reorder-level>5</reorder-level>
+        <reorder-quantity>20</reorder-quantity>
+        <suppliers>
+            <supplier>Aranguez fruit trees</supplier> 
+            <supplier>West Indian Plant</supplier>             
+        </suppliers>
+        <discount></discount>
+        <images>
+            <image>cucumber.jpg</image>
+            <image>cucumber2.jpg</image>
+        </images>
+    </product>
+    <product type='GS'>
+        <code>1016</code>
+        <description>Pesticide</description>
+        <category>chemical</category>
+        <price>20.00</price>
+        <quantity>100</quantity>
+        <reorder-level>90</reorder-level>
+        <reorder-quantity>100</reorder-quantity>
+        <suppliers>
+            <supplier>Aranguez Plant Supplies</supplier> 
+            <supplier>West Indian Suppliers</supplier>             
+        </suppliers>
+        <discount></discount>
+        <images>
+            <image>pest.jpg</image>
+            <image>pest2.jpg</image>
+        </images>
+    </product>
+    <product type='GS'>
+        <code>1017</code>
+        <description>13inch pot</description>
+        <category>pots</category>
+        <price>20</price>
+        <quantity>100</quantity>
+        <reorder-level>90</reorder-level>
+        <reorder-quantity>100</reorder-quantity>
+        <suppliers>
+            <supplier>Aranguez Plant Supplies</supplier> 
+            <supplier>West Indian Suppliers</supplier>             
+        </suppliers>
+        <discount type="monthly">10</discount>
+        <images>
+            <image>13inchpot.jpg</image>
+            <image>13inchpot2.jpg</image>
+        </images>
+    </product>
+    <product type='GS'>
+        <code>1018</code>
+        <description>4inch pot</description>
+        <category>pots</category>
+        <price>9.34</price>
+        <quantity>100</quantity>
+        <reorder-level>90</reorder-level>
+        <reorder-quantity>100</reorder-quantity>
+        <suppliers>
+            <supplier>Aranguez Plant Supplies</supplier> 
+            <supplier>West Indian Suppliers</supplier>             
+        </suppliers>
+        <discount></discount>
+        <images>
+            <image>4inchpot.jpg</image>
+            <image>4inchpot2.jpg</image>
+        </images>
+    </product>
+    <product type='GS'>
+        <code>1019</code>
+        <description>22inch pot</description>
+        <category>pots</category>
+        <price>49.99</price>
+        <quantity>100</quantity>
+        <reorder-level>90</reorder-level>
+        <reorder-quantity>100</reorder-quantity>
+        <suppliers>
+            <supplier>Aranguez Plant Supplies</supplier> 
+            <supplier>West Indian Suppliers</supplier>             
+        </suppliers>
+        <discount type="monthly">10</discount>
+        <images>
+            <image>22inchpot.jpg</image>
+            <image>22inchpot2.jpg</image>
+        </images>
+    </product>
+    <product type='GS'>
+        <code>1020</code>
+        <description>4 pc tool set</description>
+        <category>tools</category>
+        <price>19.99</price>
+        <quantity>28</quantity>
+        <reorder-level>30</reorder-level>
+        <reorder-quantity>10</reorder-quantity>
+        <suppliers>
+            <supplier>Aranguez Plant Supplies</supplier> 
+            <supplier>West Indian Suppliers</supplier>             
+        </suppliers>
+        <discount type="monthly">10</discount>
+        <images>
+            <image>4pctool.jpg</image>
+            <image>4pctool2.jpg</image>
+        </images>
+    </product>
+    <product type='GS'>
+        <code>1021</code>
+        <description>4pc kids rake set</description>
+        <category>tools</category>
+        <price>39.99</price>
+        <quantity>40</quantity>
+        <reorder-level>45</reorder-level>
+        <reorder-quantity>10</reorder-quantity>
+        <suppliers>
+            <supplier>Aranguez Plant Supplies</supplier> 
+            <supplier>West Indian Suppliers</supplier>             
+        </suppliers>
+        <discount type="monthly">10</discount>
+        <images>
+            <image>kidsrake.jpg</image>
+            <image>kidsrake2.jpg</image>
+        </images>
+    </product>
+    <product type='GS'>
+        <code>1022</code>
+        <description>garden shears</description>
+        <category>tools</category>
+        <price>39.99</price>
+        <quantity>40</quantity>
+        <reorder-level>45</reorder-level>
+        <reorder-quantity>10</reorder-quantity>
+        <suppliers>
+            <supplier>Aranguez Plant Supplies</supplier> 
+            <supplier>West Indian Suppliers</supplier>             
+        </suppliers>
+        <discount type="monthly">10</discount>
+        <images>
+            <image>shears.jpg</image>
+            <image>shears2.jpg</image>
+        </images>
+    </product>
+    <product type='GS'>
+        <code>1023</code>
+        <description>Lawn chair</description>
+        <category>decor</category>
+        <price>89.99</price>
+        <quantity>40</quantity>
+        <reorder-level>45</reorder-level>
+        <reorder-quantity>10</reorder-quantity>
+        <suppliers>
+            <supplier>Bhagwansingh</supplier> 
+            <supplier>West Indian Suppliers</supplier>             
+        </suppliers>
+        <discount type="monthly">10</discount>
+        <images>
+            <image>lawn.jpg</image>
+            <image>lawn2.jpg</image>
+        </images>
+    </product>
+    <product type='GS'>
+        <code>1024</code>
+        <description>8-2-12 palm fertilizer</description>
+        <category>chemical</category>
+        <price>39.99</price>
+        <quantity>40</quantity>
+        <reorder-level>35</reorder-level>
+        <reorder-quantity>10</reorder-quantity>
+        <suppliers>
+            <supplier>Aranguez Plant Supplies</supplier> 
+            <supplier>West Indian Suppliers</supplier>             
+        </suppliers>
+        <discount type="monthly">10</discount>
+        <images>
+            <image>fert.jpg</image>
+            <image>fert2.jpg</image>
+        </images>
+    </product>
+    <product type='GS'>
+        <code>1025</code>
+        <description>Water Soluble Fertilizer</description>
+        <category>chemical</category>
+        <price>31.99</price>
+        <quantity>50</quantity>
+        <reorder-level>45</reorder-level>
+        <reorder-quantity>10</reorder-quantity>
+        <suppliers>
+            <supplier>Aranguez Plant Supplies</supplier> 
+            <supplier>West Indian Suppliers</supplier>             
+        </suppliers>
+        <discount></discount>
+        <images>
+            <image>water.jpg</image>
+            <image>water2.jpg</image>
+        </images>
+    </product>
+    
+</inventory>
