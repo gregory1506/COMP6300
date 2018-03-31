@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<!--
+03717357
+Gregory Ollivierre
+Comp6300 Assignment3 Question 1
+-->
+
+<xs:schema targetNamespace="mydomain"
+           xmlns:target="mydomain"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    
+    <xs:element name="library" type="target:librarytype"/>
+    
+    <xs:complexType name="librarytype">
+        <xs:sequence> 
+            <xs:choice maxOccurs="unbounded">
+               <xs:sequence>
+                    <xs:element name="book"  minOccurs="1" maxOccurs="unbounded" type="target:booktype"/>
+                    <xs:element name="loan" minOccurs="0" maxOccurs="unbounded" type="target:loantype"/>
+                </xs:sequence>
+                <xs:sequence>
+                    <xs:element name="loan" minOccurs="0" maxOccurs="unbounded" type="target:loantype"/>
+                    <xs:element name="book"  minOccurs="1" maxOccurs="unbounded" type="target:booktype"/>
+                </xs:sequence>
+            </xs:choice>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="loan" minOccurs="0" maxOccurs="unbounded" type="target:loantype"/>
+            </xs:choice> 
+        </xs:sequence>
+    </xs:complexType>
+    
+    
+    <xs:complexType name="booktype">
+        <xs:all>
+            <xs:element name="title" type="xs:string"/>
+            <xs:element name="author" type="xs:string"/>
+        </xs:all>
+        <xs:attributeGroup ref="target:bookattributes"/>
+    </xs:complexType>
+    
+    <xs:attributeGroup name="bookattributes">
+        <xs:attribute name="genre" type="target:genretype" use="required"/>
+        <xs:attribute name="callref" type="target:callreftype" use="required"/>
+    </xs:attributeGroup>
+        
+    <xs:complexType name="loantype">
+        <xs:all>
+            <xs:element name="loandate" type="xs:date"/>
+            <xs:element name="duedate" type="xs:date"/>
+        </xs:all>
+        <xs:attribute name="callref" type="target:callreftype" use="required"/>
+    </xs:complexType>
+
+    
+    <xs:simpleType name="callreftype">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-zA-Z]{1}[a-zA-Z0-9]{1,}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="genretype">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="textbook"/>
+            <xs:enumeration value="novel"/>
+            <xs:enumeration value="report"/>
+            <xs:enumeration value="dissertation"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="datetype">
+        <xs:restriction base="xs:string">
+            <!--            <xs:pattern value="\d{4}\-(0?[1-9]|1[012])\-(0?[1-9]|[12][0-9]|3[01])*"/>-->
+            <xs:pattern value="[0-9]{4}[-][0-9]{2}[-][0-9]{2}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+</xs:schema>

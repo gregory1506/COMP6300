@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!--
+03717357
+Gregory Ollivierre
+Comp6300 Assignment3 Question 3
+-->
+
+<xs:schema version="1.0"
+           targetNamespace="mydomain"
+           xmlns:target="mydomain"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+    <xs:element name="coursesOffered" type="target:coursesofferedtype"/>
+    <xs:complexType name="coursesofferedtype">
+        <xs:choice>
+            <xs:element name="course" type="target:coursetype" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:choice>
+    </xs:complexType>
+    <xs:complexType name="coursetype">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="description" type="xs:string"/>
+            <xs:element name="code" type="target:codetype"/>
+            <xs:element name="price" type="target:pricetype"/>
+            <xs:element name="month" type="target:monthtype"/>
+        </xs:sequence>
+        <xs:attribute name="type" type="target:attributetype"/>
+    </xs:complexType>
+    <xs:simpleType name="attributetype">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[pP]ottery"/>
+            <xs:pattern value="[mM]usic"/>
+            <xs:pattern value="[mM]etal[-][sS]mithing"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="monthtype">
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="5"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="pricetype">
+        <xs:restriction base="xs:int">
+            <xs:enumeration value="200"/>
+            <xs:enumeration value="400"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="codetype">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z]{3}[123]{1}[0-5]{2}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+</xs:schema>

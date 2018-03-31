@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<coursesOffered xmlns="mydomain" 
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="mydomain courses.xsd">
+
+    <course type="pottery">
+        <name>Comp6340</name>
+        <description>The least interesting course</description>
+        <code>ADC342</code>
+        <price>400</price>
+        <month>2</month>
+    </course>
+    <course type="music">
+        <name>Comp6341</name>
+        <description>The least interesting course</description>
+        <code>AZC343</code>
+        <price>200</price>
+        <month>3</month>
+    </course>
+    <course type="metal-smithing">
+        <name>Comp6344</name>
+        <description>The least interesting course</description>
+        <code>ABC345</code>
+        <price>200</price>
+        <month>3</month>
+    </course>
+</coursesOffered>

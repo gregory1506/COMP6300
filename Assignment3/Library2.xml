@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+--> 
+<library xmlns="mydomain" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="mydomain library.xsd">
+    <book genre='novel' callref='A31343'>
+        <title>Gone with the wind</title>
+        <author>Max Plank</author>
+    </book>
+    <loan callref='C1343'>
+        <loandate>1998-09-01</loandate>
+        <duedate>1998-09-30</duedate>
+    </loan>
+    <!--    <book genre='textbook' callref='B1343'>
+        <title>Engineering Mathematics</title>
+        <author>Sir Robert Dolittle</author>
+    </book>-->
+    <loan callref='B1343'>
+        <loandate>1998-09-02</loandate>
+        <duedate>1998-09-30</duedate>
+    </loan>
+</library>

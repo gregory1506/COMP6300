@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!--
+03717357
+Gregory Ollivierre
+Comp6300 Assignment3 Question 2
+-->
+
+<xs:schema version="1.0"
+           targetNamespace="mydomain"
+           xmlns:target="mydomain"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    
+    <xs:element name="verificationrequests" type="target:verificationrequeststype"/>
+    
+    <xs:complexType name="verificationrequeststype">
+        <xs:choice>
+            <xs:element name="verificationrequest" type="target:verificationrequesttype" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:choice>
+    </xs:complexType>
+    
+    <xs:complexType name="verificationrequesttype">
+        <xs:sequence>
+            <xs:element name="transactionamount" type="xs:decimal"/>
+            <xs:element name="cardinformation" type="target:cardinfotype"/>
+            <xs:element name="ownerinformation" type="target:ownerinfotype"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="ownerinfotype">
+        <xs:all>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="address" type="xs:string"/>
+        </xs:all>
+    </xs:complexType>
+    
+    <xs:complexType name="cardinfotype">
+        <xs:all>
+            <xs:element name="cardnumber" type="target:cardnumbertype"/>
+        </xs:all>
+        <xs:attribute name="cardtype" type="target:cardcompanies" use="required"/>
+    </xs:complexType>
+    
+    <xs:simpleType name="cardnumbertype">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{4}[ -]?[0-9]{4}[ -]?[0-9]{4}[ -]?[0-9]{4}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="cardcompanies">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[vV]isa"/>
+            <xs:pattern value="[mM]astercard"/>
+            <xs:pattern value="[dD]iscover"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+</xs:schema>
