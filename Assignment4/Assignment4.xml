@@ -1,0 +1,107 @@
+<!-- Assignment 4 Question 1 -->
+<!-- Determine whether the following OWL2 code snippets are syntactically correct and accurately represent the ontological conceptualisations shown in Figure 1.  Justify your answers and suggest corrections if any. -->
+<!-- 1.a -->
+<!-- Objectproperty isn't closed and the domain and range are mixed up. It should be: -->
+<owl:ObjectProperty rdf:about="#hasTopping"> 
+    <rdfs:domain rdf:resource="#Pizza"/>
+    <rdfs:range rdf:resource="#PizzaTopping"/>
+</owl:ObjectProperty>
+<!-- 1.b -->
+<!-- No such thing as ObjectPropertyType...only ObjectProperty. Also the hasspiciness relation was meant for pizza toppings as subject. It should be:  -->
+<owl:ObjectProperty rdf:about="#hasSpiciness">
+    <rdfs:domain rdf:resource="#PizzaTopping"/> 
+    <rdfs:range rdf:resource="#Spiciness"/> 
+</owl:ObjectProperty>
+<!-- 1.c -->
+<!-- Cheddar is a subclass of ChessTopping. also rdf resource is missing  -->
+<owl:Class rdf:about="#Cheddar"> 
+    <rdfs:subClassOf rdf:resource="#ChesseTopping"/>    
+</owl:Class>
+<!-- 1.d -->
+<!-- No such thing as DataProperty...only DataTypeProperty. Also owl tag missing.  -->
+<owl:DataTypeProperty rdf:about="#hasPizzaSize">              
+    <rdfs:domain rdf:resource="#Pizza"/>                                                
+    <rdf:range rdf:resource="&xsd;double"/>  
+</owl:DataTypeProperty>
+<!-- 1.e -->
+<!-- No Type in ObjectProperty.  And the object Spiciness has a level. Rdfs instead of rdf.  -->
+<owl:DatatypeProperty rdf:about="#hasSpicinessLevel">   
+    <rdfs:domain rdf:resource="#Spiciness"/>           
+    <rdfs:range rdf:resource="&xsd;double"/>    
+</owl:DatatypeProperty>
+<!-- 1.f -->
+<!-- No empty resource for subclassof.                                            -->
+<owl:Class rdf:about="#Mushroom">                               
+    <rdfs:subClassOf rdf:resource="#VegetableTopping"/>   
+</owl:Class>
+<!-- 1.g -->
+<!-- PizzaTopping has 2 subclasses Vegetable and Cheese Topping.  We can define one -->
+<owl:Class rdf:about="#ChesseTopping">                                    
+    <rdfs:subClassOf rdf:resource="#PizzaTopping"/>                
+</owl:Class>
+<!-- 1.h -->
+<!-- Nothing wrong here as long as we are defining a pizza class: -->
+<owl:Class rdf:about="#Pizza"/>
+<!-- Assignment 4 Question 2 -->
+<!-- Write OWL2 code to represent the following individuals. -->
+<!-- 2.a A plain Cheddar Cheese pizza: -->
+<owl:Class rdf:about="#Pizza"/>
+<owl:Class rdf:about="#PizzaTopping"/>
+<owl:Class rdf:about="#CheeseTopping">
+    <rdfs:subClassOf rdf:resource="#PizzaTopping"/>
+</owl:Class>
+<owl:Class rdf:about="#Cheddar">
+    <rdfs:subClassOf rdf:resource="#CheeseTopping"/>
+</owl:Class>
+<owl:ObjectProperty rdf:about="#hasTopping">
+    <rdfs:domain rdf:resource="#Pizza"/> 
+    <rdfs:range rdf:resource="#PizzaTopping"/> 
+</owl:ObjectProperty>
+<Cheddar rdf:ID="#BasicCheddarCheesa"/>
+<Pizza rdf:ID="#PlainPizza">
+    <Topping rdf:resource="BasicCheddarCheese"/>
+</Pizza>
+<!-- 2.b  A spicy pizza with pepper jack cheese and jalepeno peppers -->
+<owl:Class rdf:about="#Pizza"/>
+<owl:Class rdf:about="#PizzaTopping"/>
+<owl:Class rdf:about="#Spiciness"/>
+<owl:Class rdf:about="#CheeseTopping">
+    <rdfs:subClassOf rdf:resource="#PizzaTopping"/>
+</owl:Class>
+<owl:Class rdf:about="#VegetableTopping">
+    <rdfs:subClassOf rdf:resource="#PizzaTopping"/>
+</owl:Class>
+<owl:Class rdf:about="#PepperJack">
+    <rdfs:subClassOf rdf:resource="#CheeseTopping"/>
+</owl:Class>
+<owl:Class rdf:about="#Jalepeno">
+    <rdfs:subClassOf rdf:resource="#VegetableTopping"/>
+</owl:Class>
+<owl:ObjectProperty rdf:about="#hasTopping">
+    <rdfs:domain rdf:resource="#Pizza"/> 
+    <rdfs:range rdf:resource="#PizzaTopping"/> 
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#hasSpiciness">
+    <rdfs:domain rdf:resource="#PizzaTopping"/> 
+    <rdfs:range rdf:resource="#Spiciness"/> 
+</owl:ObjectProperty>
+<owl:DatatypeProperty rdf:about="#hasSpicinessLevel">   
+    <rdfs:domain rdf:resource="#Spiciness"/>           
+    <rdfs:range rdf:resource="&xsd;double"/>    
+</owl:DatatypeProperty>
+<Spiciness rdf:ID="#PepperSpiciness">
+    <hasSpicinessLevel>7</hasSpicinessLevel>
+</Spiciness>
+<Spiciness rdf:ID="#CheeseSpiciness">
+    <hasSpicinessLevel>4</hasSpicinessLevel>
+</Spiciness>
+<PepperJack rdf:ID="PJCheese">
+    <hasSpiciness rdf:resource="CheeseSpiciness"/>
+</PepperJack>
+<Jalepeno rdf:ID="Jalepenopeppers">
+    <hasSpiciness rdf:resource="PepperSpiciness"/>
+</Jalepeno>
+<Pizza rdf:ID="SpicyPizza">
+    <hasTopping rdf:resource="Jalepenopeppers"/>
+    <hasTopping rdf:resource="PJCheese"/>
+</Pizza>
