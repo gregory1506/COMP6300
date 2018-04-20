@@ -96,12 +96,13 @@
     <hasSpicinessLevel>4</hasSpicinessLevel>
 </Spiciness>
 <PepperJack rdf:ID="PJCheese">
-    <hasSpiciness rdf:resource="CheeseSpiciness"/>
+    <hasSpiciness rdf:resource="#CheeseSpiciness"/>
 </PepperJack>
 <Jalepeno rdf:ID="Jalepenopeppers">
-    <hasSpiciness rdf:resource="PepperSpiciness"/>
+    <hasSpiciness rdf:resource="#PepperSpiciness"/>
 </Jalepeno>
 <Pizza rdf:ID="SpicyPizza">
-    <hasTopping rdf:resource="Jalepenopeppers"/>
-    <hasTopping rdf:resource="PJCheese"/>
+    <hasTopping rdf:resource="#Jalepenopeppers"/>
+    <hasTopping rdf:resource="#PJCheese"/>
 </Pizza>
+<!-- 2.c  A mildly spicy cheddar cheese pizza with mushrooms and sweet peppers -->
