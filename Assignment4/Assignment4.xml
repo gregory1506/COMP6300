@@ -89,10 +89,10 @@
     <rdfs:domain rdf:resource="#Spiciness"/>           
     <rdfs:range rdf:resource="&xsd;double"/>    
 </owl:DatatypeProperty>
-<Spiciness rdf:ID="#PepperSpiciness">
+<Spiciness rdf:ID="PepperSpiciness">
     <hasSpicinessLevel>7</hasSpicinessLevel>
 </Spiciness>
-<Spiciness rdf:ID="#CheeseSpiciness">
+<Spiciness rdf:ID="CheeseSpiciness">
     <hasSpicinessLevel>4</hasSpicinessLevel>
 </Spiciness>
 <PepperJack rdf:ID="PJCheese">
@@ -137,25 +137,25 @@
     <rdfs:range rdf:resource="&xsd;double"/>    
 </owl:DatatypeProperty>
 <!-- ----------------------------------------- -->
-<Spiciness rdf:ID="#SweetPepperSpiciness">
+<Spiciness rdf:ID="SweetPepperSpiciness">
     <hasSpicinessLevel>2</hasSpicinessLevel>
 </Spiciness>
-<Spiciness rdf:ID="#CheddarCheeseSpiciness">
+<Spiciness rdf:ID="CheddarCheeseSpiciness">
     <hasSpicinessLevel>1</hasSpicinessLevel>
 </Spiciness>
-<Spiciness rdf:ID="#MushroomSpiciness">
+<Spiciness rdf:ID="MushroomSpiciness">
     <hasSpicinessLevel>0</hasSpicinessLevel>
 </Spiciness>
-<Cheddar rdf:ID="#ChedCheese">
+<Cheddar rdf:ID="ChedCheese">
     <hasSpiciness rdf:resource="#CheddarCheeseSpiciness"/>
 </Cheddar>
-<SweetPeppers rdf:ID="#Sweetpeppers">
+<SweetPeppers rdf:ID="Sweetpeppers">
     <hasSpiciness rdf:resource="#SweetPepperSpiciness"/>
 </SweetPeppers>
-<Mushrooms rdf:ID="#Mushmush">
+<Mushrooms rdf:ID="Mushmush">
     <hasSpiciness rdf:resource="#MushroomSpiciness">
 </Mushrooms>
-<Pizza rdf:ID="#MildPizza">
+<Pizza rdf:ID="MildPizza">
     <hasTopping rdf:resource="#Mushmush"/>
     <hasTopping rdf:resource="#Sweetpeppers"/>
     <hasTopping rdf:resource="#ChedCheese"/>
