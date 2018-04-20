@@ -1,3 +1,6 @@
+// UWI ID : 03717357
+// Course : COM6300
+// Assignment : 4
 public void loadFile(String fileloc) {
     try {
         // Create a file object that points to the local copy

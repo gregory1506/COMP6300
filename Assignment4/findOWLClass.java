@@ -1,3 +1,6 @@
+// UWI ID : 03717357
+// Course : COM6300
+// Assignment : 4
 public OWLClass findOWLClass(String className) {
     boolean found = false;
     OWLClass testOWLClass = null;
