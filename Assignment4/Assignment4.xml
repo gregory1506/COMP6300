@@ -57,9 +57,9 @@
     <rdfs:domain rdf:resource="#Pizza"/> 
     <rdfs:range rdf:resource="#PizzaTopping"/> 
 </owl:ObjectProperty>
-<Cheddar rdf:ID="#BasicCheddarCheesa"/>
+<Cheddar rdf:ID="#BasicCheddarCheese"/>
 <Pizza rdf:ID="#PlainPizza">
-    <Topping rdf:resource="BasicCheddarCheese"/>
+    <hasTopping rdf:resource="BasicCheddarCheese"/>
 </Pizza>
 <!-- 2.b  A spicy pizza with pepper jack cheese and jalepeno peppers -->
 <owl:Class rdf:about="#Pizza"/>
@@ -106,3 +106,57 @@
     <hasTopping rdf:resource="#PJCheese"/>
 </Pizza>
 <!-- 2.c  A mildly spicy cheddar cheese pizza with mushrooms and sweet peppers -->
+<owl:Class rdf:about="#Pizza"/>
+<owl:Class rdf:about="#PizzaTopping"/>
+<owl:Class rdf:about="#Spiciness"/>
+<owl:Class rdf:about="#CheeseTopping">
+    <rdfs:subClassOf rdf:resource="#PizzaTopping"/>
+</owl:Class>
+<owl:Class rdf:about="#VegetableTopping">
+    <rdfs:subClassOf rdf:resource="#PizzaTopping"/>
+</owl:Class>
+<owl:Class rdf:about="#Cheddar">
+    <rdfs:subClassOf rdf:resource="#CheeseTopping"/>
+</owl:Class>
+<owl:Class rdf:about="#Mushrooms">
+    <rdfs:subClassOf rdf:resource="#VegetableTopping"/>
+</owl:Class>
+<owl:Class rdf:about="#SweetPeppers">
+    <rdfs:subClassOf rdf:resource="#VegetableTopping"/>
+</owl:Class>
+<owl:ObjectProperty rdf:about="#hasTopping">
+    <rdfs:domain rdf:resource="#Pizza"/> 
+    <rdfs:range rdf:resource="#PizzaTopping"/> 
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#hasSpiciness">
+    <rdfs:domain rdf:resource="#PizzaTopping"/> 
+    <rdfs:range rdf:resource="#Spiciness"/> 
+</owl:ObjectProperty>
+<owl:DatatypeProperty rdf:about="#hasSpicinessLevel">   
+    <rdfs:domain rdf:resource="#Spiciness"/>           
+    <rdfs:range rdf:resource="&xsd;double"/>    
+</owl:DatatypeProperty>
+<!-- ----------------------------------------- -->
+<Spiciness rdf:ID="#SweetPepperSpiciness">
+    <hasSpicinessLevel>2</hasSpicinessLevel>
+</Spiciness>
+<Spiciness rdf:ID="#CheddarCheeseSpiciness">
+    <hasSpicinessLevel>1</hasSpicinessLevel>
+</Spiciness>
+<Spiciness rdf:ID="#MushroomSpiciness">
+    <hasSpicinessLevel>0</hasSpicinessLevel>
+</Spiciness>
+<Cheddar rdf:ID="#ChedCheese">
+    <hasSpiciness rdf:resource="#CheddarCheeseSpiciness"/>
+</Cheddar>
+<SweetPeppers rdf:ID="#Sweetpeppers">
+    <hasSpiciness rdf:resource="#SweetPepperSpiciness"/>
+</SweetPeppers>
+<Mushrooms rdf:ID="#Mushmush">
+    <hasSpiciness rdf:resource="#MushroomSpiciness">
+</Mushrooms>
+<Pizza rdf:ID="#MildPizza">
+    <hasTopping rdf:resource="#Mushmush"/>
+    <hasTopping rdf:resource="#Sweetpeppers"/>
+    <hasTopping rdf:resource="#ChedCheese"/>
+</Pizza>
